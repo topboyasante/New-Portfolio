@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+//header
+header{
+    .header-top{
+        p{
+            span{
+                a{
+                    color: brown;
+                    text-decoration: none;
+                }
+            }
+        }
+        .mobile-logo{
+            display: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            color: #040F0F;
+            li{
+                list-style-type: none;
+                float: right;
+                padding: 0em 2em;
+            }
+            a{
+                text-decoration: none;
+                color: #040F0F;
+
+                &:hover{
+                    border-bottom:3px solid brown ;
+                }
+            }
+        }
+    }
+}
+
+
+//footer
+footer{
+    border: 1px solid brown;
+    background-color: brown;
+    p{
+        color: white;
+    }
+}
+
+
+//mobile
+@media screen and(max-width:450px) {
+   .header-top{
+       display: none;
+   }
+   .header-top-mobile{
+       nav{
+         display: flex;
+         justify-content: space-around;
+           img{
+               margin-top: 1em;
+               width: 2em;
+               height: 2em;
+           }
+           span{
+            a{
+                color: brown;
+                text-decoration: none;
+            }
+        }
+       }
+   }
+}
+
+//Tablets
+@media screen and(max-width:700px) {
+    .header-top{
+        display: none;
+    }
+    .header-top-mobile{
+        nav{
+          display: flex;
+          justify-content: space-around;
+            img{
+                margin-top: 1em;
+                width: 2em;
+                height: 2em;
+            }
+            span{
+                a{
+                    color: brown;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+ }
+
+//Large Screens
+@media screen and(min-width:700px) {
+    .header-top-mobile{
+        display: none;
+    }
+ }
+//Utilities
+.text-center{
+    text-align: center;
+}
