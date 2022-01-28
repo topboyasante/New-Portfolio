@@ -65,9 +65,6 @@ header .header-top nav a:hover {
 footer {
   border: 1px solid brown;
   background-color: brown;
-}
-
-footer p {
   color: white;
 }
 
