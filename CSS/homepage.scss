@@ -43,11 +43,11 @@ header{
 .hero{
     .flex-container{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         .text-items{
             margin-top: 1.2em;
             font-size: 2.5em;
-
+            padding: 0em 1.5em;
             span{
                 color: brown;
                 animation-name:focus-in-contract-bck;
