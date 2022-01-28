@@ -39,6 +39,26 @@ header{
     }
 }
 
+//Hero Section
+.hero{
+    .flex-container{
+        display: flex;
+        justify-content: space-around;
+        .text-items{
+            margin-top: 1.2em;
+            font-size: 2.5em;
+
+            span{
+                color: brown;
+                animation-name:focus-in-contract-bck;
+                animation-duration: 2s;
+            }
+        }
+        svg{
+            width: 45vw;
+        }
+    }
+}
 
 //footer
 footer{
@@ -72,6 +92,18 @@ footer{
         }
        }
    }
+
+   .hero{
+    .flex-container{
+        .text-items{
+            margin-top: 1.2em;
+            font-size: 1.5em;
+        }
+        svg{
+            display: none;
+        }
+    }
+}
 }
 
 //Tablets
@@ -96,6 +128,20 @@ footer{
             }
         }
     }
+
+    .hero{
+        .flex-container{
+            display: flex;
+            justify-content: space-around;
+            .text-items{
+                margin-top: 1.2em;
+                font-size: 1.3em;
+            }
+            svg{
+                width: 45vw;
+            }
+        }
+    }
  }
 
 //Large Screens
@@ -108,3 +154,24 @@ footer{
 .text-center{
     text-align: center;
 }
+
+//Animations
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  

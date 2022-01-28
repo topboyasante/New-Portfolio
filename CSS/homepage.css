@@ -37,6 +37,31 @@ header .header-top nav a:hover {
   border-bottom: 3px solid brown;
 }
 
+.hero .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero .flex-container .text-items {
+  margin-top: 1.2em;
+  font-size: 2.5em;
+}
+
+.hero .flex-container .text-items span {
+  color: brown;
+  -webkit-animation-name: focus-in-contract-bck;
+          animation-name: focus-in-contract-bck;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.hero .flex-container svg {
+  width: 45vw;
+}
+
 footer {
   border: 1px solid brown;
   background-color: brown;
@@ -66,6 +91,13 @@ footer p {
     color: brown;
     text-decoration: none;
   }
+  .hero .flex-container .text-items {
+    margin-top: 1.2em;
+    font-size: 1.5em;
+  }
+  .hero .flex-container svg {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -88,6 +120,20 @@ footer p {
     color: brown;
     text-decoration: none;
   }
+  .hero .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hero .flex-container .text-items {
+    margin-top: 1.2em;
+    font-size: 1.3em;
+  }
+  .hero .flex-container svg {
+    width: 45vw;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -98,5 +144,41 @@ footer p {
 
 .text-center {
   text-align: center;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=homepage.css.map */
